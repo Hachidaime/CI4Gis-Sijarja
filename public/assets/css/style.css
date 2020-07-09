@@ -1,0 +1,273 @@
+/* Color Variable */
+
+:root {
+  --cadet-blue-crayola: #a6b1e1;
+  --lavender-web: #eeeeff;
+  --rhythm: #7f7caf;
+  --bdazzled-blue: #28587b;
+  --laurel-green: #9fb798;
+  --sage: #cccaa5;
+  --black-chocolate: #191913;
+  --olive-drab7: #40321a;
+  --cyber-yelllow: #ffd500;
+  --goldenrod: #e8ae0c;
+}
+
+/* Background Color Styling */
+
+.bg-cadetBlueCrayola {
+  background-color: var(--cadet-blue-crayola);
+}
+
+.bg-lavender-web {
+  background-color: var(--lavender-web);
+}
+
+.bg-rhytm {
+  background-color: var(--rhythm);
+}
+
+.bg-bdazzledBlue {
+  background-color: var(--bdazzled-blue);
+}
+
+.bg-sage {
+  background-color: var(--sage);
+}
+
+.bg-black-chocolate {
+  background-color: var(--black-chocolate);
+}
+
+.bg-olive-grab7 {
+  background-color: var(--olive-drab7);
+}
+
+.bg-cyber-yellow {
+  background-color: var(--cyber-yelllow);
+}
+
+.bg-goldenrod {
+  background-color: var(--goldenrod);
+}
+
+/* Text Color Styling */
+
+.text-cadetBlueCrayola {
+  color: var(--cadet-blue-crayola);
+}
+
+.text-lavenderWeb {
+  color: var(--lavender-web);
+}
+
+.text-rhytm {
+  color: var(--rhythm);
+}
+
+.text-bdazzledBlue {
+  color: var(--bdazzled-blue);
+}
+
+.text-sage {
+  color: var(--sage);
+}
+
+.text-black-chocolate {
+  color: var(--black-chocolate);
+}
+
+.text-olive-grab7 {
+  color: var(--olive-drab7);
+}
+
+.text-cyber-yellow {
+  color: var(--cyber-yelllow);
+}
+
+.text-goldenrod {
+  color: var(--goldenrod);
+}
+
+/* Body Element Styling */
+
+body {
+  background-color: var(--sage);
+  color: var(--black-chocolate);
+}
+
+/* Background Login Image Styling */
+
+.bg-login-image {
+  background: url(https://source.unsplash.com/6V2vCZ2hYtY/600x800);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Login Form Label Styling */
+
+.login label {
+  font-weight: bold;
+}
+
+/* Nav Link Hover & Active Background & Text Color Styling */
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: var(--cyber-yelllow) !important;
+  color: var(--olive-grab7) !important;
+}
+
+/* Nav Link Icon & Text Color Styling */
+
+.sideMenu .nav-link .icon,
+.sideMenu .nav-link .text {
+  color: var(--lavender-web);
+}
+
+.sideMenu .nav-link:hover .icon,
+.sideMenu .nav-link:hover .text,
+.sideMenu .nav-link.active .icon,
+.sideMenu .nav-link.active .text {
+  color: var(--olive-drab7);
+}
+
+.nav-tabs .nav-link .text,
+.nav-tabs .nav-link:hover .text,
+.nav-tabs .nav-link.active .text {
+  color: var(--olive-drab7);
+}
+
+.breadcrumb-item a {
+  color: var(--olive-drab7);
+}
+
+/* Wrapper Styling */
+.wrapper {
+  margin-top: 3.5rem;
+}
+
+.wrapper .sideMenu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 3.5rem auto auto;
+  left: 0;
+  width: 12.5rem;
+  -webkit-transition: all ease 0.25s;
+  transition: all ease 0.25s;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  z-index: 1065;
+}
+
+.wrapper .content {
+  width: 100%;
+  margin-left: 0rem;
+  -webkit-transition: all ease 0.25s;
+  transition: all ease 0.25s;
+}
+
+.wrapper.active .sideMenu {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.nav-link {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: block;
+  white-space: nowrap;
+}
+
+.nav-link .icon {
+  margin-right: 0.25rem;
+  font-size: 1.2rem;
+  vertical-align: middle;
+  height: 2rem;
+  width: 2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.nav-link .text {
+  font-size: 0.875rem;
+}
+
+/* Sidemenu Media Query Styling */
+
+@media (min-width: 992px) {
+  .wrapper .sideMenu {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .wrapper .content {
+    margin-left: 12.5rem;
+  }
+  .wrapper.active .sideMenu {
+    width: 5rem;
+  }
+  .wrapper.active .sideMenu .nav-link {
+    text-align: center;
+  }
+  .wrapper.active .sideMenu .nav-link .icon {
+    margin-right: 0;
+  }
+  .wrapper.active .sideMenu .nav-link .text {
+    display: none;
+  }
+  .wrapper.active .content {
+    margin-left: 5rem;
+  }
+}
+
+.display-4 {
+  font-weight: bold;
+}
+
+.card-body-icon {
+  position: absolute;
+  z-index: 0;
+  top: 25px;
+  right: 4px;
+  opacity: 0.4;
+  font-size: 90px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0da";
+  font-weight: 900;
+}
+
+.form label {
+  font-weight: bold;
+}
+
+.profile-photo {
+  width: 150px;
+}
+
+.thumbnail-photo {
+  width: 50px;
+}
+
+.mini-photo {
+  width: 30px;
+}
+
+.form-group.required > label::after {
+  content: "*";
+  color: var(--danger);
+}
